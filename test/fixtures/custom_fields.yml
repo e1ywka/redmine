@@ -153,3 +153,54 @@ custom_fields_011:
     SGXDqWzDp2prc2Tigqw2NTTDuQ==
   - Other value
   field_format: list
+custom_fields_012: 
+  name: Среда
+  min_length: 0
+  regexp: ""
+  is_for_all: false
+  is_filter: true
+  type: ProjectCustomField
+  max_length: 0
+  possible_values: 
+  - LOCAL
+  - SCVDEV
+  - UAT
+  - PROD
+  id: 12
+  is_required: true
+  field_format: list
+  default_value: ""
+  editable: true
+custom_fields_013: 
+  name: Среда
+  min_length: 0
+  regexp: ""
+  is_for_all: false
+  is_filter: true
+  type: ProjectCustomField
+  max_length: 0
+  possible_values: 
+  - LOCAL
+  - SCVDEV
+  - UAT
+  - PROD
+  id: 13
+  is_required: true
+  field_format: list
+  default_value: ""
+  editable: true
+  searchable: true
+custom_fields_014: 
+  name: Версия формы
+  min_length: 0
+  regexp: ""
+  is_for_all: false
+  is_filter: true
+  type: ProjectCustomField
+  max_length: 0
+  id: 14
+  is_required: true
+  field_format: string
+  default_value: ""
+  editable: true
+  searchable: true
