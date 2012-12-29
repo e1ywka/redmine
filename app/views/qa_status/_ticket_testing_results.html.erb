@@ -1,0 +1,22 @@
+<table class="list issues">
+  <tr>
+    <td>Вид тестирования</td>
+    <td>LOCAL</td>
+    <td>SVCDEV</td>
+    <td>UAT</td>
+    <td>PROD</td>
+  </tr>
+<% @issue.relations.each do |relation| %>
+  <tr>
+    <td><%= relation.other_issue(@issue).tracker.name %></td>
+    <td>
+      <% relation.other_issue(@issue).custom_field_values.each do |field| %>
+        <td><%= field.custom_field.name + ", " + field.value %></td>
+      <% end %>
+    </td>
+  </tr>
+
+<% end %>
+</table>
+
+
