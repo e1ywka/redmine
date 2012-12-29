@@ -105,7 +105,13 @@ end %>
 <div id="relations">
 <%= render :partial => 'relations' %>
 </div>
+
 <% end %>
+
+<hr />
+<div id="qa_status">
+<%= call_hook(:ticket_testing_results, :issue => @issue) %>
+</div>
 
 </div>
 
