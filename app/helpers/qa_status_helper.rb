@@ -1,10 +1,11 @@
 module QaStatusHelper
   # Возвращает статус тикета по тестированию: исполнитель, версия, статус
+  # @param [Issue] issue
   def issue_status(issue)
-    return false
+    return "#{issue.assigned_to}, #{issue.status}"
   end
 
-  # Возвращает issue, которое связано с параметром issue, имеет указанный трекер и указанное настраеваемое поле
+  # Возвращает Issue, которое связано с параметром issue, имеет указанный трекер и указанное настраеваемое поле
   # Если условиям удовлетворяет несколько тикетов, берется тикет с наибольшей версией
   def relates_to_testers(issue, params)
     # Проверяем наличие параметров в хэше: tracker_name, custom_field_name
